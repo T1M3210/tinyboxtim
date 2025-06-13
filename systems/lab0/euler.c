@@ -12,7 +12,14 @@ int euler1() {
 }
 
 int euler5() {
-        return 0;
+	int num = 1;
+	for (int i = 1; i <= 20; i++) {
+		if (num % i != 0) {
+			num++;
+			i = 0;
+		}
+	}
+        return num;
 }
 
 int euler6() {
